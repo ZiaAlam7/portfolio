@@ -8,7 +8,7 @@ const Contact = ({ scrollPosition }) => {
 
 
   const handleDownload = () => {
-    const imageUrl = 'https://ziaalam.vercel.app/src/assets/BusinessCard.png';
+    const imageUrl = 'https://ziaalam.vercel.app/BusinessCard.png';
 
     const link = document.createElement('a');
 
