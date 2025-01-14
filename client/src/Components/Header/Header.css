@@ -1,0 +1,134 @@
+.nav_section{
+    /* background-color: rebeccapurple; */
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.2s  ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.scrolling{
+    background-color: white;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s  ease-in-out;
+}
+
+.visible{
+    display: none;
+    animation: fadeOut 0.3s ease-in-out;  
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.navbar-logo {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav_links{
+    /* background-color: aqua; */
+    height: 100%;
+}
+
+.nav_links>ul {
+/* background-color: red; */
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 17px;
+    align-items: center;
+}
+
+.nav_links > ul > li{
+    /* background-color: wheat; */
+    padding: 5px 0px;
+}
+
+.nav_links > ul > li:hover {
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+}
+
+.nav_icon {
+    display: none;
+}
+
+.nav_icon > img {
+    transition: all 0.3 ease-in;
+}
+
+@media (min-width: 767px) {
+    .nav_links {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        height: 7vh;
+    }
+
+    .nav_links {
+        width: 95vw;
+        top: 66px;
+        position: absolute;
+        position: absolute;
+        z-index: 100;
+        display: block;
+    }
+
+    .nav_links>ul {
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        gap: 0rem;
+        /* From https://css.glass */
+        background: rgba(223, 223, 223, 0.4);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10.9px);
+        -webkit-backdrop-filter: blur(10.9px);
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    .nav_links>ul>li {
+        border-bottom: 1px solid black;
+        /* padding: 22px 0px; */
+        width: 100%;
+        text-align: center;
+       
+    }
+
+    .nav_links>ul>li:last-child {
+        border: 0px;
+    }
+
+  
+
+    .nav_icon {
+        display: block;
+    }
+
+
+    .nav_links > ul > li:hover {
+        /* padding: 22px 0px; */
+        background-color: whitesmoke;
+}
+
+.nav_links > ul > li > a {
+    /* background-color: aqua; */
+    width: 100%;
+    padding: 18px 0px;
+    display: block;
+}
+}
+

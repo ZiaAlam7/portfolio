@@ -1,0 +1,35 @@
+.foot{
+    height: 320px;
+    width: 100%;
+    background-image: url(../../assets/wave.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    gap: 25px;
+    padding: 10px;
+}
+.footer_social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer_social > a > img {
+    width: 30px;
+}
+
+@media (max-width: 500px) {
+    .footer_copy{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    .footer_copy{
+        font-size: 12px;
+    }
+}

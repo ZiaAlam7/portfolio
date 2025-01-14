@@ -1,0 +1,42 @@
+# Node.js and npm-related
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Build and output folders
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# Optional npm package files
+package-lock.json
+yarn.lock
+
+# Optional VS Code settings folder
+.vscode/
+
+# Mac-specific files
+*.DS_Store
