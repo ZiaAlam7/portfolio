@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const corsOptions = {
-    origin: [''],
+    origin: ['https://ziaalam.vercel.app'],
     methods: ['GET', 'POST']
   };
 
