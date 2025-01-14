@@ -139,11 +139,16 @@ button {
 
     /* RESPONSIVENESS  */
 
+    @media (max-width: 1300px) {
+        .container {
+            max-width: 98vw;
+        }
+    }
+
     @media (max-width: 767px) {
         .container {
             max-width: 95vw;
         }
-
         .heading {
             width: 350px;
             max-width: 350px;
