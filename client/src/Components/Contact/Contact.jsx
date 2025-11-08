@@ -8,12 +8,12 @@ const Contact = ({ scrollPosition }) => {
 
 
   const handleDownload = () => {
-    const imageUrl = 'https://ziaalam.vercel.app/BusinessCard.png';
+    const imageUrl = 'https://ziaalam.vercel.app/Zia_Alam_Resume.pdf';
 
     const link = document.createElement('a');
 
     link.href = imageUrl;
-    link.download = 'Zia-Alam-Business-Card.jpg';
+    link.download = 'Zia_Alam_Resume.pdf';
 
     link.click();
   };
@@ -114,7 +114,7 @@ const Contact = ({ scrollPosition }) => {
 
             <div className="form_btn">
               <button type='submit'>SEND MESSAGE</button>
-              <button onClick={handleDownload}>Download My Business Card</button>
+              <button onClick={handleDownload}>Download My Resume</button>
             </div>
           </form>
           {status && <p className='email_status'>{status}</p>}
